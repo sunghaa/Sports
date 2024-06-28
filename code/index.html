@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전체 운동</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="cart.html">운동 장바구니</a>
+        <a href="index.html">전체 운동</a>
+        <a href="selected_exercises.html">선택 운동</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="main-box">
+        <div class="container">
+            <!-- Row 1 -->
+            <div class="button" onclick="showHistory('축구')">축구</div>
+            <div class="button" onclick="showHistory('테니스')">테니스</div>
+            <div class="button" onclick="showHistory('수영')">수영</div>
+            <!-- Row 2 -->
+            <div class="button" onclick="showHistory('배드민턴')">배드민턴</div>
+            <div class="button" onclick="showHistory('요가')">요가</div>
+            <div class="button" onclick="showHistory('사이클')">사이클</div>
+            <!-- Row 3 -->
+            <div class="button" onclick="showHistory('클라이밍')">클라이밍</div>
+            <div class="button" onclick="showHistory('골프')">골프</div>
+            <div class="button" onclick="showHistory('농구')">농구</div>
+            <!-- Row 4 -->
+            <div class="button" onclick="showHistory('탁구')">탁구</div>
+            <div class="button" onclick="showHistory('배구')">배구</div>
+            <div class="button" onclick="showHistory('서핑')">서핑</div>
+        </div>
+
+        <div id="history" class="history">
+            <!-- History content will be injected here -->
+        </div>
+        <button id="addToListBtn" style="display: none;" onclick="addToList()">내 리스트 담기</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
