@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="cart.html">추천</a>
+        <a href="index.html">전체 운동</a>
+        <a href="selected_exercises.html">선택 운동</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="main-box">
+        <h1>운동 추천</h1>
+        <div id="start-section">
+            <button id="start-button">시작하기</button>
+        </div>
+        <div id="quiz-section" class="hidden">
+            <div id="question-container"></div>
+            <div id="choices-container"></div>
+            <button id="next-button" class="hidden">다음</button>
+        </div>
+        <div id="result-section" class="hidden">
+            <div id="result"></div>
+            <button id="addToListBtn" style="display: none;">선택 운동에 담기</button>
+        </div>
+    </div>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>

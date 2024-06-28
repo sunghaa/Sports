@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전체 운동</title>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="cart.html">스포츠 종목 추천</a>
+        <a href="index.html">전체 스포츠</a>
+        <a href="selected_exercises.html">선택한 스포츠</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="main-box">
+        <div class="container grid-container">
+            <!-- 운동 버튼들 -->
+            <div class="button" onmouseover="showHistory('축구')" onmouseout="hideHistory()">축구</div>
+            <div class="button" onmouseover="showHistory('테니스')" onmouseout="hideHistory()">테니스</div>
+            <div class="button" onmouseover="showHistory('수영')" onmouseout="hideHistory()">수영</div>
+            <div class="button" onmouseover="showHistory('배드민턴')" onmouseout="hideHistory()">배드민턴</div>
+            <div class="button" onmouseover="showHistory('요가')" onmouseout="hideHistory()">요가</div>
+            <div class="button" onmouseover="showHistory('사이클')" onmouseout="hideHistory()">사이클</div>
+            <div class="button" onmouseover="showHistory('클라이밍')" onmouseout="hideHistory()">클라이밍</div>
+            <div class="button" onmouseover="showHistory('골프')" onmouseout="hideHistory()">골프</div>
+            <div class="button" onmouseover="showHistory('농구')" onmouseout="hideHistory()">농구</div>
+            <div class="button" onmouseover="showHistory('탁구')" onmouseout="hideHistory()">탁구</div>
+            <div class="button" onmouseover="showHistory('배구')" onmouseout="hideHistory()">배구</div>
+            <div class="button" onmouseover="showHistory('서핑')" onmouseout="hideHistory()">서핑</div>
+        </div>
+
+        <div class="right-box">
+            <img id="sportImage" src="" alt="운동 이미지" style="display: none; max-width: 100%; max-height: 200px;">
+            <div id="history" class="history"></div>
+            <button id="addToListBtn" style="display: none;" onclick="addToList()">내 리스트에 담기</button>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
