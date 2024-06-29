@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스포츠 종목 추천</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="firstpage.html">HOME</a>
+        <a href="index.html">전체 스포츠</a>
+        <a href="selected_exercises.html">선택한 스포츠</a>
+        <a href="cart.html">스포츠 종목 추천</a>
+        <a href="contact.html">주관</a>
+    </div>
+
+    <div class="main-box">
+        <h1>맞춤 스포츠 추천 검사지</h1>
+        <div id="start-section">
+            <button id="start-button">시작하기</button>
+        </div>
+        <div id="quiz-section" class="hidden">
+            <div id="question-container"></div>
+            <div id="choices-container"></div>
+            <div class="button-wrapper">
+                <button id="next-button" class="hidden">다음</button>
+            </div>
+        </div>
+        <div id="result-section" class="hidden">
+            <div id="result"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>
